@@ -54,23 +54,35 @@ model-viewer {
   transform: translateY(-50%);
 }
 
-.HotspotAnnotation{
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  left: calc(100% + 1em);
-  max-width: 128px;
-  overflow-wrap: break-word;
-  padding: 0.5em 1em;
+.HotspotAnnotation {
+  display: none;
   position: absolute;
-  top: 50%;
-  width: max-content;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 200px;
+  max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transform: translate3d(-50%, -120%, 0);
+  color: black;
+  font-size: 14px;
+  z-index: 1;
+  pointer-events: auto;
 }
+
+.Hotspot.active .HotspotAnnotation {
+  display: block;
+}
+
+.Hotspot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: #4285f4;
+  cursor: pointer;
+}
+
 
 .Hotspot:not([data-visible]) > * {
   opacity: 0;
