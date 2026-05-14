@@ -1,10 +1,4 @@
-<model-viewer
- src="Celula_vegetal.glb"
- ar
- ar-modes="webxr scene-viewer quick-look"
- camera-controls
- poster="poster.webp"
- shadow-intensity="1">
+<model-viewer src="Celula_vegetal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
     <button class="Hotspot" slot="hotspot-2" data-position="22.001540082222917m -27.10316144488536m 8.000000000000057m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation">citoplasma</div>
     </button>
